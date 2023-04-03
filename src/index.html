@@ -1,27 +1,118 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1  <i class="fas fa-university"></i>Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>PEC 1 UOC Boilerplate</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="nav">
+                    <img
+                        src="./assets/images/logo.png"
+                        alt="logotipo"
+                        width="200px"
+                    />
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="">Playa</a></li>
+                        <li><a href="">Montaña</a></li>
+                        <li><a href="">Cultura</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section>
+                <h1 class="text-center">Playas de Asturias</h1>
+
+                <div class="playas">
+                    <div>
+                        <a href="">
+                            <img
+                                src="./assets/images/playa_PuertodeVega.jpg"
+                                class="img-fluid"
+                                alt="Playa Puerto de Vega"
+                                width="500"
+                                height="400"
+                            />
+                            <div>
+                                <span>Playa</span> <span>Puerto de Vega</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img
+                                src="./assets/images/playa-del-aguilar.jpg"
+                                class="img-fluid"
+                                alt="Playa del Aguilar"
+                                width="500"
+                                height="400"
+                            />
+                            <div>
+                                <span>Playa</span> <span>del Aguilar</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img
+                                src="./assets/images/playa-Oleiros.jpg"
+                                class="img-fluid"
+                                alt="Playa de Oleiros"
+                                width="500"
+                                height="400"
+                            />
+                            <div>
+                                <span>Playa</span> <span>de Oleiros</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img
+                                src="./assets/images/Playa-San-Pedro-de-la-Ribera.jpg"
+                                class="img-fluid"
+                                alt="Playa de San Pedro de la Ribera"
+                                width="500"
+                                height="400"
+                            />
+                            <div>
+                                <span>Playa</span>
+                                <span>de San Pedro de la Ribera</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="apa">
+                    <p>Actividad realizada por Rubén Sánchez Aparicio</p>
+                    <p>
+                        Primera prueba de evaluación realizada para la
+                        asignatura HTML y CSS II de la<abbr
+                            title="Universitat Oberta de Catalunya"
+                            lang="ca"
+                        >
+                            UOC</abbr
+                        >
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
