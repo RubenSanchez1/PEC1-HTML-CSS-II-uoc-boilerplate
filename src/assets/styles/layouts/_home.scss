@@ -20,17 +20,20 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  color: inherit;
+}
+
+a:hover {
+  border: none;
+  color: $contrast-color;
+}
+
 abbr {
   text-decoration: none;
 }
 address {
   font-style: normal;
-}
-h1 {
-  font-size: 3.25rem;
-  margin-bottom: 1.5rem;
-  line-height: 1em;
-  color: $text-color;
 }
 
 .img-fluid {
@@ -56,7 +59,19 @@ footer {
   background-color: $light-color;
   color: $text-color;
   text-align: center;
+
+  .credit {
+    margin-top: 2rem;
+  }
+
+  .apa {
+    p {
+      font-size: 0.7rem;
+      margin-bottom: 0.5em;
+    }
+  }
 }
+
 main {
   padding-top: 3rem;
   padding-bottom: 4rem;
@@ -97,88 +112,6 @@ section {
     max-width: 1320px;
   }
 }
-
-/* Menú de navegación principal*/
-nav.nav {
-  text-align: center;
-  color: $text-color;
-
-  ul {
-    margin-top: 1rem;
-    list-style-type: none;
-  }
-
-  li {
-    font-size: 1.2rem;
-    font-weight: 800;
-
-    a {
-      color: inherit;
-    }
-
-    a:hover {
-      border: none;
-      color: $contrast-color;
-    }
-
-    a.active {
-      border-bottom: 3px solid currentColor;
-    }
-
-    a.active:hover {
-      border-bottom: 3px solid currentColor;
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  nav.nav {
-    text-align: left;
-
-    ul {
-      li {
-        display: inline-block;
-        padding-right: 30px;
-      }
-      li:last-child {
-        padding-right: 0;
-      }
-    }
-  }
-
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-}
-
-/************************************************************
-Contenidos del pie de página
-*************************************************************/
-
-footer {
-  a {
-    color: $contrast-color;
-  }
-
-  a:hover {
-    color: $contrast-color;
-    border: none;
-  }
-
-  .credit {
-    margin-top: 2rem;
-  }
-
-  .apa {
-    p {
-      font-size: 0.7rem;
-      margin-bottom: 0.5em;
-    }
-  }
-}
-
 /************************************************************
 Página de inicio
 *************************************************************/
@@ -187,25 +120,6 @@ Página de inicio
 
   div {
     margin-bottom: 2rem;
-    a {
-      color: $text-color;
-    }
-    a:hover {
-      color: $contrast-color;
-    }
-
-    a {
-      div {
-        font-size: 1.2rem;
-        font-weight: 700;
-
-        a span:first-of-type {
-          font-size: 1rem;
-          font-weight: 400;
-          display: block;
-        }
-      }
-    }
   }
 
   h2 + p {
@@ -233,5 +147,43 @@ Página de inicio
     div {
       margin-bottom: 0;
     }
+  }
+}
+
+/* Menú de navegación principal*/
+nav.nav {
+  text-align: center;
+  color: $text-color;
+
+  ul {
+    margin-top: 1rem;
+    list-style-type: none;
+  }
+
+  li {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 992px) {
+  nav.nav {
+    text-align: left;
+
+    ul {
+      li {
+        display: inline-block;
+        padding-right: 30px;
+      }
+      li:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }

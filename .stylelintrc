@@ -1,6 +1,11 @@
 {
   "extends": ["stylelint-config-recommended-scss"],
   "rules": {
-    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
+    "selector-class-pattern": [
+      "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+      {
+        "message": "No sigues la convención aplicable a la metodología BEM para la asignación de nombres de las clases"
+      }
+    ]
   }
 }
